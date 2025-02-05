@@ -9,7 +9,7 @@
     <title>Escolhendo o seu tema</title>
 </head>
 
-<body>
+<body style="background-color: rgb(29, 28, 28);">
 
     <div id="root" class="container"></div>
 
@@ -25,8 +25,10 @@
 
             for (const element of images) {
                 cards.push(
-                    <div class="col card text-bg-dark" style={{width:"30rem"}}>
-                        <img src={`./img/${element}`} className="card-img" alt="..."/>
+                    <div className="col-12 col-md-4 mt-3" >
+                        <div className="card">                            
+                            <img src={`./img/${element}`} className="card-img" alt="..."/>
+                        </div>
                     </div>
                 )
             }
