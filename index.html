@@ -18,53 +18,10 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 
-    <script type="text/babel">
+    <script type="text/babel" src="./js/main.jsx"></script>
 
-        const images = (images) => {
-
-            const cards = []
-
-            for (const element of images) {
-                cards.push(
-                    <div className="col-12 col-md-4 mt-3" >
-                        <div className="card">
-                            <img src={`./img/${element}`} className="card-img" alt="..." />
-                        </div>
-                    </div>
-                )
-            }
-
-            return cards
-        }
-
-        const App = () => {
-            return (
-                <div>
-                    <div className="row">
-                        {images(["mg1.jpeg", "mg2.jpeg", "mg5.jpeg"])}
-                    </div>
-
-                    <div className="row">
-                        {images(["mg4.jpeg", "mg3.jpeg"])}
-                    </div>
-
-                </div>
-            )
-        }
-
-        ReactDOM.render(<App />, document.getElementById('root'))
-
-    </script>
-
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-42P10Q71DJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-42P10Q71DJ');
-    </script>
+    <script src="js/metrics.js"></script>
     
 </body>
 
